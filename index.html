@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #E5EAF0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .newsletter-container {
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            /* Requirement wali box-shadow */
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo-icon img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 2.5rem; color: #000000; font-weight: 600; margin-bottom: 16px; }
+        
+        .subtitle { font-size: 1rem; color: #394150; line-height: 1.6; margin-bottom: 30px; }
+
+        .newsletter-form { display: flex; flex-direction: column; gap: 16px; }
+
+        input {
+            padding: 16px;
+            border: 1px solid #E5EAF0;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 16px;
+            background-color: #284BCE;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover { background-color: #1e3a9f; }
+
+        .footer-text { font-size: 0.875rem; color: #8C727F; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <main class="newsletter-container">
+        <div class="logo-icon">
+            <img src="resources/logo.svg" alt="Newsletter Logo">
+        </div>
+
+        <h1>Join our newsletter</h1>
+        <p class="subtitle">Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe now</button>
+        </form>
+
+        <p class="footer-text">Your email is 100% confidential and won't send you any spam.</p>
+    </main>
+
+</body>
+</html>
